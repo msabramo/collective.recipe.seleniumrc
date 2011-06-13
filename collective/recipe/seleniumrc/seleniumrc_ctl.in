@@ -1,0 +1,11 @@
+#!/bin/bash
+# Set the PATH likely firefox locations
+if [ `uname -s` == 'Darwin' ]; then
+    # OSX
+    export PATH=/Applications/Firefox.app/Contents/MacOS:$PATH
+else
+    # some other kind of system then
+    export PATH=/usr/lib/firefox-3.0/:/usr/lib/firefox-3.5/:/usr/lib/firefox/:/usr/lib/iceweasel/:/usr/local/lib/firefox:$PATH
+fi
+export MOZ_NO_REMOTE=1  # required to spawn new firefox instance
+%(java-cmd)s -jar %(location)s/selenium-server.jar $*
