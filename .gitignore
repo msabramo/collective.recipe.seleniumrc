@@ -1,3 +1,7 @@
 EGG-INFO
 *.pyc
 *.pyo
+build
+*.egg-info
+dist
+doc.txt
