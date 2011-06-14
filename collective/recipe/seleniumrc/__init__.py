@@ -55,6 +55,10 @@ class Recipe(hexagonit.recipe.download.Recipe):
     def install_wrapper(self):
         ctl_path = os.path.join(self.buildout["buildout"]["bin-directory"],
                                 self.name)
+
+        if self.options['url'].endswith('.jar'):
+            self.options['jar_name'] = os.path.basename(self.options['url'])
+
         open(ctl_path, "w").write(pkg_resources.resource_string(__name__, "seleniumrc_ctl.in") % self.options)
         os.chmod(ctl_path, (os.stat(ctl_path).st_mode |
                             stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH))

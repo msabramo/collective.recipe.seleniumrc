@@ -8,4 +8,4 @@ else
     export PATH=/usr/lib/firefox-3.0/:/usr/lib/firefox-3.5/:/usr/lib/firefox/:/usr/lib/iceweasel/:/usr/local/lib/firefox:$PATH
 fi
 export MOZ_NO_REMOTE=1  # required to spawn new firefox instance
-%(java-cmd)s -jar %(location)s/selenium-server.jar $*
+%(java-cmd)s -jar %(location)s/%(jar_name)s $*
