@@ -37,6 +37,7 @@ setup(
       'Topic :: Software Development :: Build Tools',
     ],
     packages=find_packages(exclude=['ez_setup']),
+    package_data={'collective.recipe.seleniumrc': ['defaults.cfg', 'seleniumrc_ctl.in']},
     include_package_data = True,
     namespace_packages = ['collective', 'collective.recipe'],
     install_requires = ['zc.buildout', 'setuptools', 'hexagonit.recipe.download'],
