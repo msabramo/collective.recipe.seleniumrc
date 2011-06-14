@@ -1,0 +1,58 @@
+
+Change History
+**************
+
+0.6 (unreleased)
+================
+
+- TBD
+
+
+0.5 (2010-11-02)
+================
+
+- Updated the default Selenium RC version to the latest (1.0.3).
+
+- Added support for suppressing all default configuration values using
+  'no-defaults'.
+
+
+0.4 (2010-08-11)
+================
+
+- Made the runner shell aware of Firefox 3.5.
+
+- Made the recipe compatible with versions of Selenium RC up to 1.0.3.
+
+0.3 (2009-11-30)
+================
+
+- Changed runner shell from /bin/sh to /bin/bash to avoid problems on systems
+  where /bin/sh != /bin/bash. [hexsprite]
+
+- Adding documentation about choosing the exact Selenium RC version, and 
+  selecting the exact Java binary [maikroeder]
+
+- Updated to latest version of SeleniumRC 1.0.1. [maikroeder]
+
+- Updated the long_description to go on PyPI. Still needs some formatting
+  work. [hexsprite]
+
+0.2 (2009-02-1)
+===============
+
+- Updated to latest version of SeleniumRC 1.0-beta-2.
+  [hannosch]
+
+- Added patches to look for firefox in the PATH in common places. Added
+  MOZ_NO_REMOTE environment variable to force Firefox to spawn new instance. 
+  (patches from Asheesh Laroia)
+
+- Fixed to work with Selenium 1.0 beta 1.  (patches from Asheesh Laroia)
+
+- Default distribution changed to Selenium 1.0 beta 1
+
+0.1
+===
+
+- initial version created at Plone Conference 2007 in Naples. [hexsprite]
