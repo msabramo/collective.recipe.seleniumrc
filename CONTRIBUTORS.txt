@@ -4,3 +4,4 @@ Hanno Schlichting - hannosch <at> plone.org
 Godefroid Chapelle - gotcha <at> bubblenet.be
 Maik Roder - roeder <at> berg.net
 Tres Seaver - tseaver <at> palladion.com
+Marc Abramowitz - marc <at> bluekai.com
